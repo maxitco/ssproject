@@ -258,7 +258,6 @@ public class Board {
     	//top-right -> bottom-left diagonal
         trap = true;
         for (int i = DIM - 1; i <= DIM*DIM-DIM+1; i += DIM - 1) {
-            System.out.println(i);
             if (!this.getField(i).equals(m)) {
                 trap = false;
             }
