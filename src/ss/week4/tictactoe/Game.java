@@ -120,11 +120,16 @@ public class Game {
     private void play() {
         while(!board.gameOver()) {
             for (int i = 0; i < players.length;i++) {
-                board.toString();
+                if (board.gameOver()) {
+                    break;
+                }
+                System.out.println(board.toString());
+                System.out.println("\n");
                 current = i;
                 board.setField(players[i].determineMove(board), players[i].getMark());
             }
         }
+        printResult();
     }
 
     /**

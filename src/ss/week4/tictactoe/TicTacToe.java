@@ -17,5 +17,6 @@ public class TicTacToe {
 
 
         Game game0 = new Game(player0, player1);
+        game0.start();
     }
 }
