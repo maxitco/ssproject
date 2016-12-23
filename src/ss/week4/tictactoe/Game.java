@@ -122,7 +122,7 @@ public class Game {
             for (int i = 0; i < players.length;i++) {
                 board.toString();
                 current = i;
-                board.setField(players[i].determineMove, players[i].getMark);
+                board.setField(players[i].determineMove(board), players[i].getMark());
             }
         }
     }
