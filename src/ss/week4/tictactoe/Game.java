@@ -118,7 +118,13 @@ public class Game {
      * the changed game situation is printed.
      */
     private void play() {
-        // TODO: implement, see P-4.20
+        while(!board.gameOver()) {
+            for (int i = 0; i < players.length;i++) {
+                board.toString();
+                current = i;
+                board.setField(players[i].determineMove, players[i].getMark);
+            }
+        }
     }
 
     /**
